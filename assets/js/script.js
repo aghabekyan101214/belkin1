@@ -9,7 +9,8 @@ let swiper = new Swiper('#hero-swiper', {
 });
 
 let swiper2 = new Swiper('#swiper', {
-    watchOverflow: true
+    watchOverflow: true,
+    loop: true,
 });
 let swiper3 = new Swiper("#swiper-logos", {
     slidesPerView: 6,
