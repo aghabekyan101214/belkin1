@@ -17,8 +17,29 @@ body{
 a, p{
     font-family: MetricRegular, Arial, sans-serif ;
 }
+.mt-16{
+    margin-top: 160px;
+}
 .title{
-    font-family: MetricSemibold, Arial, sans-serif;
+    font-family: MetricBold, Arial, sans-serif;
+    font-size: 43px;
+    line-height: 42px;
+    letter-spacing: .5px;
+}
+.title + p{
+    font-family: MetricRegular, Arial, sans-serif;
+    font-size: 26px;
+    line-height: 34px;
+    margin-top: 40px;
+    letter-spacing: .5px;
+}
+.prod-title{
+    font-family: MetricBold, Arial, sans-serif;
+    text-align: center;
+    line-height: 27px;
+    font-size: 29px;
+    text-transform: uppercase;
+    max-width: 210px;
 }
 /*first line*/
 .top-header{
@@ -131,19 +152,11 @@ a, p{
     text-decoration: none;
     color: black;
 }
-.thunder-cont a p{
-    font-family: MetricSemibold, Arial, sans-serif;
-    font-size: 18px;
-}
 /*thunderbolt section end*/
 
 /*popular-categories*/
 .popular-categories img{
     height: 250px;
-}
-.popular-categories p{
-    font-family: MetricSemibold, Arial, sans-serif;
-    font-size: 18px;
 }
 .popular-categories a{
     font-size: 22px;
@@ -154,6 +167,9 @@ a, p{
     content: ">";
     font-size: 30px;
     margin-left: 7px;
+}
+.clickable{
+    cursor: pointer;
 }
 /*popular-categories end*/
 
@@ -185,5 +201,23 @@ footer .info{
     }
     .popular-categories a{
         display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .mt-16{
+        margin-top: 110px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .title + p{
+        font-size: 20px;
+    }
+    .prod-title{
+        max-width: 100%;
+    }
+    .popular-categories a{
+        width: 100%;
     }
 }

@@ -34,9 +34,25 @@ let swiper3 = new Swiper("#swiper-logos", {
         }
     }
 });
+
+// The second slider arrows click handlers
+
 $(".swiper-button-next").click(function(){
     swiper2.slideNext();
 });
 $(".swiper-button-prev").click(function(){
     swiper2.slidePrev();
 });
+
+$(document).ready(function(){
+
+    // Popular products images are clickable
+    $(document).on("click", ".clickable", function() {
+        let url = $(this).parent().find("a").attr("href");
+        window.open(
+            `${url}`,
+            '_blank' // <- open in new tab.
+        );
+    });
+});
+
