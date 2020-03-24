@@ -158,18 +158,43 @@ a, p{
 .popular-categories img{
     height: 250px;
 }
-.popular-categories a{
+.popular-categories .pr-row a{
     font-size: 22px;
     color: #73d44a;
     text-decoration: none;
 }
-.popular-categories a:after {
+.popular-categories .pr-row a:after {
     content: ">";
     font-size: 30px;
     margin-left: 7px;
 }
+.popular-categories .pr-row a.after-none:after{
+    content: " ";
+}
 .clickable{
     cursor: pointer;
+}
+.green_btn{
+    padding: 10px 24px;
+    font-size: 20px;
+    line-height: 1.9rem;
+    border-radius: 100px;
+    background-color: #73d44a;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: MetricSemibold, Arial, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: all 100ms ease;
+    width: auto;
+    zoom: 1;
+}
+.green_btn:hover{
+    background-color: #A69C94;
+    color: white;
 }
 /*popular-categories end*/
 
